@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.8
         with:
-          host: 18.232.175.84
+          host: 54.209.94.152
           username: ubuntu
           key: ${{ secrets.DEVOPS_SSH_KEY }}
           script: |
