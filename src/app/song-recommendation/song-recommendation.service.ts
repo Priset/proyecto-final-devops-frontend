@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SongRecommendationService {
-  private apiUrl = 'https://invitacion-web-goit-backend.vercel.app/api/song-recommendations/';
+  private apiUrl = 'http://3.88.230.72:5000/api/song-recommendations/';
 
   constructor(private http: HttpClient) { }
 
