@@ -34,6 +34,11 @@ jobs:
           username: ubuntu
           key: ${{ secrets.DEVOPS_SSH_KEY }}
           script: |
+            sudo apt update
+            sudo apt install -y docker.io
+            sudo systemctl start docker
+            sudo systemctl enable docker
+
             docker pull ${{ secrets.DOCKER_USERNAME }}/frontend-image:latest
             docker stop frontend-container || true
             docker rm frontend-container || true
