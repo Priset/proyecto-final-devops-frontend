@@ -1,0 +1,105 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.counter-box {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5rem 3rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Articulat', sans-serif;
+  position: relative; /* Necesario para posicionar la imagen de brindis */
+}
+
+.time {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.time-text {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #d0d0d0;
+}
+
+.days {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.brindis-image {
+  position: absolute;
+  right: 5px; /* Ajusta según necesites para que sobresalga del borde derecho */
+  bottom: 67px;
+  height: 180%; /* Ajusta la altura para que tenga el tamaño deseado */
+  transform: translateY(20%); /* Ajusta el valor para que se eleve un poco fuera del contenedor */
+}
+
+/* Responsividad para tabletas */
+@media (max-width: 768px) {
+  .counter {
+    padding: 2rem; /* Reduce el padding externo */
+  }
+
+  .counter-box {
+    padding: 4rem 2rem; /* Reduce el padding interno */
+    max-width: 800px; /* Ajusta el ancho máximo */
+    gap: 0.5rem; /* Reduce la separación entre elementos */
+  }
+
+  .time {
+    font-size: 3rem; /* Reduce el tamaño del texto principal */
+  }
+
+  .time-text {
+    font-size: 1.3rem; /* Ajusta el tamaño del texto adicional */
+  }
+
+  .brindis-image {
+    height: 140%; /* Reduce ligeramente la imagen */
+    right: 5px; /* Ajusta su posición horizontal */
+    bottom: 50px; /* Ajusta su posición vertical */
+  }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+  .counter {
+    padding: 1rem; /* Reduce el padding externo aún más */
+  }
+
+  .counter-box {
+    padding: 3rem 1rem; /* Reduce el padding interno */
+    max-width: 100%;
+    gap: 0.3rem; /* Reduce la separación entre elementos */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: flex-start;    /* Centra los elementos horizontalmente */
+  }
+
+  .time {
+    font-size: 2.3rem; /* Texto principal más pequeño */
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .time-text {
+    font-size: 0.9rem; /* Ajusta el texto adicional */
+    margin-top: 0.5rem; /* Agrega un margen superior para separarlo */
+    text-align: flex-start; /* Asegura que esté centrado */
+  }
+
+  .brindis-image {
+    height: 110%; /* Reduce aún más la imagen */
+    right: 5px; /* Alínea al borde derecho */
+    bottom: 37px; /* Ajusta su posición vertical */
+  }
+}

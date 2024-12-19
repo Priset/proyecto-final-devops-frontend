@@ -1,0 +1,289 @@
+.footer {
+  background-color: #000000; /* Fondo negro */
+  color: #FFFFFF; /* Texto blanco */
+  padding: 2rem;
+  font-family: 'Articulat', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para el logo y posición de íconos de redes sociales */
+.logo-goit {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem; /* Espacio entre el logo y los íconos */
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 7.5rem; /* Tamaño del logo */
+  height: auto;
+  margin-top: -30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 1.7rem; /* Tamaño de cada ícono social */
+  height: 1.7rem;
+  margin-top: -20px;
+  margin-inline-start: 5.5px;
+  fill: #b9e4dc;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Pequeño zoom al pasar el mouse */
+}
+
+/* Sección de Copyright */
+.copyright-section {
+  text-align: center;
+  margin-top: -22.7px;
+  font-size: 0.75rem;
+}
+
+.country-title-peru {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.country-title-bolivia {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.horizontal-divider-bolivia,
+.horizontal-divider-peru {
+  border-top: 1px solid rgba(255, 255, 255, 0.56);
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.city-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.city-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.address {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Ajuste adicional para el espaciado entre secciones */
+.peru-section {
+  margin-top: -125px;
+  margin-left: 17.5rem;
+}
+
+.city-piura {
+  margin-left: 8.5rem;
+}
+
+.bolivia-section {
+  margin-top: 60px;
+  margin-left: auto;
+}
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .footer-content {
+    align-items: center; /* Centra el contenido */
+  }
+
+  .logo-goit {
+    align-items: center; /* Centra el logo y redes sociales */
+  }
+
+  .city-info {
+    justify-content: center; /* Centra la lista de ciudades */
+    gap: 1rem; /* Reduce el espacio entre ciudades */
+  }
+
+  .country-title-peru {
+    font-size: 1rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .country-title-bolivia {
+    font-size: 1rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .city-name {
+    font-size: 0.9rem; /* Reduce el tamaño de las ciudades */
+  }
+
+  .address {
+    font-size: 0.8rem; /* Reduce el tamaño de las direcciones */
+  }
+
+  .copyright-section {
+    font-size: 0.7rem; /* Texto más compacto */
+  }
+
+  .social-icons {
+    gap: 1rem; /* Reduce el espacio entre íconos */
+  }
+
+  .social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .peru-section {
+    margin-top: 1rem; /* Ajusta el margen superior */
+    margin-left: 0; /* Centra las secciones */
+  }
+
+  .bolivia-section {
+    margin-top: 2rem;
+    margin-left: 0; /* Centra las secciones */
+  }
+}
+
+/* Móviles */
+@media screen and (min-device-width: 340px) and (max-device-width: 480px) {
+  .footer-content {
+    align-items: center;
+    padding: 1rem; /* Reduce el padding general */
+  }
+
+  .footer {
+    width: 370px;
+    margin-inline-start: -8px;
+    margin-bottom: -8px;
+  }
+
+  .logo {
+    width: 6rem; /* Reduce el tamaño del logo */
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  .social-icons {
+    gap: 0.8rem; /* Espacio compacto entre íconos */
+  }
+
+  .social-icon {
+    width: 1.2rem; /* Íconos más pequeños */
+    height: 1.2rem;
+  }
+
+  .horizontal-divider-peru {
+    width: 143%;
+    margin-inline-start: -45px;
+}
+
+  .city-info {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center;
+  }
+
+  .country-title-peru {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+    margin-inline-start: -45px;
+  }
+
+  .country-title-bolivia {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+  }
+
+  .city-name,
+  .address {
+    text-align: center; /* Centra los textos */
+    font-size: 0.8rem; /* Texto más compacto */
+  }
+
+  .city-piura {
+    margin-left: 0.2rem;
+  }
+
+  .copyright-section {
+    font-size: 0.65rem; /* Texto más compacto */
+    margin-top: 1rem; /* Ajusta el margen superior */
+  }
+}
+
+/* Ajuste específico para iPhone 14 y dispositivos similares */
+@media screen and (min-device-width: 400px) and (max-device-width: 475px) and (min-device-height: 530px) and (max-device-height: 1000px) {
+  .footer-content {
+    align-items: center;
+    padding: 1rem; /* Reduce el padding general */
+  }
+
+  .footer {
+    width: 462px;
+    margin-inline-start: -8px;
+    margin-bottom: -8px;
+  }
+
+  .logo {
+    width: 6rem; /* Reduce el tamaño del logo */
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  .social-icons {
+    gap: 0.8rem; /* Espacio compacto entre íconos */
+  }
+
+  .social-icon {
+    width: 1.2rem; /* Íconos más pequeños */
+    height: 1.2rem;
+  }
+
+  .horizontal-divider-peru {
+    width: 143%;
+    margin-inline-start: -45px;
+  }
+
+  .city-info {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center;
+  }
+
+  .country-title-peru {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+    margin-inline-start: -45px;
+  }
+
+  .country-title-bolivia {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+  }
+
+  .city-name,
+  .address {
+    text-align: center; /* Centra los textos */
+    font-size: 0.8rem; /* Texto más compacto */
+  }
+
+  .city-piura {
+    margin-left: 0.2rem;
+  }
+
+  .copyright-section {
+    font-size: 0.65rem; /* Texto más compacto */
+    margin-top: 1rem; /* Ajusta el margen superior */
+  }
+}

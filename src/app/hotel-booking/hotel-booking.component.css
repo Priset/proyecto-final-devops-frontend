@@ -1,0 +1,143 @@
+.hotel-booking-section {
+  background-color: #01C38D; /* Color verde según la paleta */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 1110px; /* Ajusta el ancho de la sección */
+  margin-left: 13.7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.booking-content {
+  color: #FFFFFF;
+  font-family: 'Articulat', sans-serif;
+}
+
+.booking-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-inline-start: 20px;
+}
+
+.booking-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  margin-inline-start: 20px;
+}
+
+.booking-button {
+  background-color: #f0fbf8;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para suavizar los cambios de color */
+  margin-inline-start: 20px;
+  margin-top: 1rem;
+}
+
+.booking-button:hover {
+  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
+  color: #01C38D; /* Cambia el color del texto */
+  opacity: 0.9;
+}
+
+.booking-image {
+  max-width: 300px; /* Ajusta el tamaño de la imagen */
+}
+
+.booking-image img {
+  position: absolute;
+  width: 40%; /* Tamaño de la imagen */
+  right: 50px;
+  bottom: 0px;
+}
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .hotel-booking-section {
+    flex-direction: column; /* Cambia a disposición en columna */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 1.5rem; /* Reduce el padding */
+    margin-left: 2rem; /* Ajusta el margen */
+    margin-right: 2rem;
+  }
+
+  .booking-content {
+    text-align: center; /* Centra el texto */
+  }
+
+  .booking-content h2 {
+    font-size: 1.5rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .booking-content p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
+
+  .booking-button {
+    padding: 0.5rem 2rem; /* Botón más compacto */
+    font-size: 0.9rem; /* Texto del botón más pequeño */
+    margin-inline-start: 0;
+  }
+
+  .booking-image {
+    max-width: 250px; /* Imagen más pequeña */
+    margin-top: 1rem;
+  }
+
+  .booking-image img {
+    position: relative; /* Cambia la posición a relativa */
+    width: 70%; /* Ajusta la imagen al 70% del contenedor */
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .hotel-booking-section {
+    padding: 1rem; /* Reduce el padding */
+    margin-left: 1rem; /* Márgenes más pequeños */
+    margin-right: 1rem;
+  }
+
+  .booking-content h2 {
+    font-size: 1.2rem; /* Reduce el tamaño del título */
+    margin-inline-start: -7px;
+  }
+
+  .booking-content p {
+    font-size: 0.9rem; /* Texto más pequeño */
+    margin-top: -5px;
+    margin-inline-start: -5px;
+  }
+
+  .booking-button {
+    padding: 0.4rem 1.5rem; /* Botón más compacto */
+    font-size: 0.85rem;
+    margin-top: 15px;
+  }
+
+  .booking-image {
+    max-width: 200px; /* Imagen más pequeña */
+  }
+
+  .booking-image img {
+    position: relative;
+    width: 100%; /* Tamaño de la imagen */
+    bottom: -16px;
+    top: 16px;
+  }
+}
+
+

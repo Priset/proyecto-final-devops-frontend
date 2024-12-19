@@ -1,0 +1,172 @@
+.event-info-section {
+  background-color: #D0F4EA;
+  padding: 2rem;
+  font-family: 'Articulat', sans-serif;
+  color: #000000;
+}
+
+.event-info-section h2 {
+  font-weight: 400;
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  margin-left: 13rem; /* Mantén la alineación actual */
+}
+
+.event-info-section h2::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #01C38D;
+  position: absolute;
+  left: -12px;
+  top: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iniciales */
+  gap: 2rem;
+  justify-items: center;
+}
+
+.info-item {
+  text-align: center;
+}
+
+/* Ajuste de márgenes para centrar los cuadros */
+.info-item:nth-child(1),
+.info-item:nth-child(4) {
+  margin-left: 10rem; /* Mantén los márgenes de centrado */
+}
+
+.info-item:nth-child(3),
+.info-item:nth-child(6) {
+  margin-right: 10rem; /* Mantén los márgenes de centrado */
+}
+
+.info-box {
+  background-color: #000000;
+  padding: 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box.alternate {
+  background-color: #01C38D;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de elevación suave */
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.info-text {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  max-width: 250px;
+}
+
+.info-box.alternate + .info-text {
+  color: #000000;
+}
+
+.info-text strong {
+  font-weight: 700;
+}
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .event-info-section {
+    padding: 1.5rem; /* Reduce el padding */
+  }
+
+  .event-info-section h2 {
+    font-size: 1.3rem; /* Reduce el tamaño del título */
+    margin-left: 0; /* Centra el título */
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+    gap: 1.5rem;
+  }
+
+  .info-item:nth-child(1),
+  .info-item:nth-child(4),
+  .info-item:nth-child(3),
+  .info-item:nth-child(6) {
+    margin-left: 0; /* Elimina márgenes extra para mejor ajuste */
+    margin-right: 0;
+  }
+
+  .info-box {
+    padding: 2rem; /* Reduce el padding */
+    max-width: 220px; /* Ajusta el ancho máximo */
+  }
+
+  .icon {
+    width: 50px; /* Iconos más pequeños */
+    height: 50px;
+  }
+
+  .info-text {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .event-info-section {
+    padding: 1rem; /* Reduce más el padding */
+  }
+
+  .event-info-section h2 {
+    font-size: 1.2rem; /* Título aún más pequeño */
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambia a 1 columna */
+    gap: 1rem;
+  }
+
+  .info-item:nth-child(1),
+  .info-item:nth-child(4),
+  .info-item:nth-child(3),
+  .info-item:nth-child(6) {
+    margin-left: 0; /* Elimina márgenes para centrado automático */
+    margin-right: 0;
+  }
+
+  .info-box {
+    padding: 1.5rem; /* Reduce el padding */
+    max-width: 100%;
+  }
+
+  .icon {
+    width: 40px; /* Iconos aún más pequeños */
+    height: 40px;
+  }
+
+  .info-text {
+    font-size: 0.85rem; /* Texto más pequeño */
+  }
+}

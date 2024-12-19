@@ -1,0 +1,237 @@
+.llajta-section {
+  text-align: left;
+  font-family: 'Articulat', sans-serif;
+  max-width: 1100px;
+  margin-left: 13.7rem;
+  margin-top: 4rem;
+}
+
+.llajta-section h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 1.5rem;
+  display: inline-flex; /* Cambiado para incluir el icono al lado del texto */
+  align-items: center; /* Alinea verticalmente el texto e ícono */
+  gap: 0.5rem; /* Espacio entre el texto y el ícono */
+}
+
+.llajta-section h2::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #01C38D;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+.llajta-icon {
+  width: 30px; /* Tamaño del ícono */
+  height: 30px;
+  object-fit: contain; /* Asegura que mantenga proporciones */
+  margin-left: 1rem;
+}
+
+.text-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente los textos e imágenes */
+  padding: 0.3rem; /* Ajusta el espacio vertical */
+  border-bottom: 1px solid #01C38D;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #FFFFFF; /* Fondo blanco en estado normal */
+}
+
+.text-block:hover {
+  background-color: #3E4C8A; /* Fondo azul en hover */
+}
+
+.title-text-item {
+  text-align: left;
+  margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.title-text-item p {
+  font-weight: 700;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-item1 {
+  text-align: left;
+  margin-left: 1rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item1 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item1 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item2 {
+  text-align: left;
+  margin-left: 0.6rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item2 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item2 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item3 {
+  text-align: left;
+  margin-left: 3.4rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item3 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item3 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item4 {
+  text-align: left;
+  margin-left: 4rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item4 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item4 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-block:hover .title-text-item p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.attraction-image {
+  width: 200px; /* Tamaño ligeramente más grande para las imágenes */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
+  margin-right: 4rem; /* Reduce el espacio entre los textos y la imagen */
+  transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+/* Efecto de zoom en hover */
+.attraction-image:hover {
+  transform: scale(1.5); /* Agranda la imagen un 10% */
+}
+
+@media (max-width: 768px) {
+  .llajta-section {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .text-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .attraction-image {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+
+  .title-text-item {
+    margin-left: 0;
+  }
+
+  .text-item1,
+  .text-item2,
+  .text-item3,
+  .text-item4 {
+    margin-left: 0;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.8rem;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .llajta-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .llajta-section {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .text-block {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .attraction-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .llajta-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .title-text-item p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .text-item1,
+  .text-item2,
+  .text-item3,
+  .text-item4 {
+    text-align: center;
+  }
+
+  /* Efecto de zoom en hover */
+  .attraction-image:hover {
+    transform: scale(1.13); /* Agranda la imagen un 10% */
+}
+}

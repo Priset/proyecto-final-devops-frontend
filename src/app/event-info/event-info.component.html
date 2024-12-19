@@ -1,0 +1,43 @@
+<section class="event-info-section">
+  <h2>Donde y Cuando es la Fiesta</h2>
+  <div class="grid-container">
+    <div class="info-item">
+      <div class="info-box" (click)="triggerConfetti($event)">
+        <img src="/assets/clock-icon.png" alt="Clock Icon" class="icon" />
+      </div>
+      <p class="info-text">El evento iniciará a las <strong>16:30 hasta las 00:00</strong></p>
+    </div>
+    <div class="info-item">
+      <div class="info-box alternate" (click)="triggerConfetti($event)">
+        <img src="/assets/calendar-icon.png" alt="Calendar Icon" class="icon" />
+      </div>
+      <p class="info-text">Nuestra fecha especial es el <strong>Sábado 1 de febrero</strong></p>
+    </div>
+    <div class="info-item">
+      <div class="info-box" (click)="redirectToMaps()">
+        <img src="/assets/maps-icon.png" alt="Location Icon" class="icon" />
+      </div>
+      <p class="info-text">Se realizará en la ciudad de <strong>Cochabamba, Bolivia</strong></p>
+    </div>
+    <div class="info-item">
+      <div class="info-box alternate" (click)="redirectToSite()">
+        <img src="/assets/site-icon.png" alt="Hotel Icon" class="icon" />
+      </div>
+      <p class="info-text">Se realizará en el <strong>Hotel Cochabamba</strong></p>
+    </div>
+    <div class="info-item">
+      <div class="info-box" (click)="triggerConfetti($event)">
+        <img src="/assets/dinner-icon.png" alt="Food Icon" class="icon" />
+      </div>
+      <p class="info-text">Degustación de comidas típicas del departamento</p>
+    </div>
+    <div class="info-item">
+      <div class="info-box alternate" (click)="openSongPopup()">
+        <img src="/assets/music-icon.png" alt="Music Icon" class="icon" />
+      </div>
+      <p class="info-text">Con la participación de distintos grupos musicales</p>
+    </div>
+  </div>
+
+  <app-song-recommendation></app-song-recommendation>
+</section>

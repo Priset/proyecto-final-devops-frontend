@@ -1,0 +1,145 @@
+.history-section {
+  text-align: center;
+  font-family: 'Articulat', sans-serif;
+}
+
+.history-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.history-section p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+  position: relative;
+  width: 1092px;
+  height: 552px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 1092px;
+  height: 552px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #000000;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.left-arrow {
+  left: 0.5rem;
+}
+
+.right-arrow {
+  right: 0.5rem;
+}
+
+.carousel-container:hover .arrow {
+  opacity: 0.7;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.indicators span {
+  height: 10px;
+  width: 10px;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicators .active {
+  background-color: #01C38D;
+}
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+
+  .history-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .history-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  .history-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .history-section p {
+    font-size: 0.9rem;
+  }
+
+  .indicators span {
+    height: 8px;
+    width: 8px;
+    margin: 0 3px;
+  }
+}

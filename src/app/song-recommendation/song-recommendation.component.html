@@ -1,0 +1,36 @@
+<div class="backdrop" id="backdrop"></div>
+<div id="songPopup" class="popup">
+  <div class="image-container">
+    <button class="close-icon" (click)="closePopup()">X</button>
+    <img src="/assets/song-recommendation.png" alt="Music Header" class="header-image" />
+  </div>
+  <h3 class="title">¡Comparte tu música!</h3>
+  <h4 class="subtitle">¿Tienes alguna canción que te gustaría escuchar en la fiesta?</h4>
+  <form #songForm="ngForm" (ngSubmit)="shareSong(songForm)">
+    <div class="input-group">
+      <label for="artist">Nombre del Artista</label>
+      <input
+        type="text"
+        id="artist"
+        [(ngModel)]="artist"
+        name="artist"
+        placeholder="Ej. Queen"
+      />
+      <div *ngIf="artistError" class="error">{{ artistError }}</div>
+    </div>
+    <div class="input-group">
+      <label for="song">Nombre de la Canción</label>
+      <input
+        type="text"
+        id="song"
+        [(ngModel)]="song"
+        name="song"
+        placeholder="Ej. Bohemian Rhapsody"
+      />
+      <div *ngIf="songError" class="error">{{ songError }}</div>
+    </div>
+    <div class="button-container">
+      <button class="close-button" type="submit">Compartir</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,112 @@
+.home-content {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Articulat', sans-serif; /* Aplicando la tipografía Articulat */
+  color: #000000; /* Color de texto negro */
+  margin-bottom: 50px;
+}
+
+/* Título principal */
+h1 {
+  font-weight: 700; /* Negrita para destacar el título */
+  color: #000000; /* Negro */
+  font-size: 2rem; /* Tamaño base del título */
+}
+
+/* Línea decorativa debajo del título */
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: #01C38D; /* Color verde */
+  margin: 0.5rem auto; /* Centrado */
+}
+
+/* Subtítulo */
+.subtitle {
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Descripción */
+.description {
+  font-weight: 400;
+  color: #000000;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Botón de registro */
+.register-button {
+  background-color: #01C38D;
+  color: #D0F4EA;
+  border: none;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.register-button:hover {
+  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
+  color: #01C38D; /* Cambia el color del texto */
+  opacity: 0.9;
+}
+
+/* Responsividad para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del título */
+  }
+
+  .subtitle {
+    font-size: 1.1rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Reduce el tamaño de la descripción */
+  }
+
+  .register-button {
+    padding: 0.5rem 2.5rem; /* Botón más compacto */
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsividad para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+  .home-content {
+    padding: 1rem;
+    margin-bottom: 30px; /* Reduce el margen inferior */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Subtítulo más pequeño */
+  }
+
+  .description {
+    font-size: 0.85rem; /* Ajusta el tamaño de la descripción */
+  }
+
+  .register-button {
+    padding: 0.5rem 2rem; /* Botón más compacto para móviles */
+    font-size: 0.85rem;
+  }
+
+  .underline {
+    width: 80px; /* Línea más pequeña */
+  }
+}

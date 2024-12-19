@@ -1,0 +1,23 @@
+:host {
+  background-color: #ace9d72e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: auto;
+  overflow-x: hidden;
+  gap: 2rem;
+  font-family: 'Articulat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  :host {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :host {
+    padding: 0.5rem;
+  }
+}
